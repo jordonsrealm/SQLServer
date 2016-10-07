@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 
+
 public class Main extends JFrame implements ActionListener{
 
 	private static final long serialVersionUID = 1L;
@@ -50,6 +51,7 @@ public class Main extends JFrame implements ActionListener{
 		
 	}
 	
+	// Method used to populate the JFrame with textfields
 	private void populate(Main m){
 		
 		first_name = new JTextField(30);
@@ -121,6 +123,7 @@ public class Main extends JFrame implements ActionListener{
 		
 	}
 	
+	// Method used to read the information from the SQL Server
 	private void readInformation(){
 		
 		Connection con = null;
@@ -213,7 +216,6 @@ public class Main extends JFrame implements ActionListener{
 		try {
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -310,7 +312,6 @@ public class Main extends JFrame implements ActionListener{
 		try {
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
